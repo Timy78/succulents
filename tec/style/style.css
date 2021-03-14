@@ -1,16 +1,13 @@
-@font-face {font-family: "adineue Light";
-    src: url("PRO_light.ttf");
-}
-@font-face {font-family: "adineue Black";
-    src: url("PRO_Black.otf");
-}
+
 mark{
   background: none;
   font-family: "adineue Black";
+  color: #3b3b3b;
 }
 p{
   font-family: "adineue Light";
   font-size: 18px;
+  line-height: 1.3;
 }
 *{
   margin: 0;
@@ -20,8 +17,9 @@ p{
   width: 1100px;
   margin: 0 auto;
 }
-a{
+a, button{
   text-decoration: none;
+  cursor: pointer;
 }
 body{
   min-width: 1100px;
@@ -50,21 +48,25 @@ h3::after{
   bottom:20px;
   left: 400px;
 }
+
+
+
 /*HEADER*/
+
 header{
   min-width: 1100px;
   height: 65px;
   width: 100%;
   background-color: rgba(0, 0, 0, 0.5);
   position: absolute;
-  font-family: "adineue Light";
   font-size: 15px;
-  text-transform: uppercase;
 }
 header>.middle>ul{
+  list-style: none;
+  font-family: "adineue Light";
+  text-transform: uppercase;
   height: 65px;
   margin: 0;
-  list-style: none;
   display: flex;
   justify-content: space-around;
   align-items: center;
@@ -83,21 +85,22 @@ header>.middle>ul>li>a{
   font-family: "adineue Light";
   font-size: 40px;
   position: fixed;
-  bottom: 50px;
-  right: 100px;
+  bottom: 20px;
+  right: 20px;
   display: none;
   width: 60px;
   height: 60px;
   border: none;
   border-radius: 30px;
   background-color: rgba(0, 0, 0, 0.7);
+  z-index: 100;
 
 }
 
 /*FIRST SCREEN*/
 
 #first_screen{
-  background-image: url(../img/bg/firstscreen_bg.jpg);
+  background-image: url(../../img/bg/firstscreen_bg.jpg);
   background-repeat: no-repeat;
   background-position: center;
   height: 100vh;
@@ -120,11 +123,11 @@ h1{
   width: 200px;
   height: 50px;
   border-radius: 14px;
-  border-color: #d9d9d9;
+  border: solid #d9d9d9 1px;
   font-family: "adineue Light";
   font-size: 18px;
   color: #d9d9d9;
-  background-color: rgba(0, 0, 0, 0.2);
+  background-color: rgba(0, 0, 0, 0.6);
 }
 
 /*SECOND SCREEN*/
@@ -147,39 +150,38 @@ h1{
   height: 160px;
   border: solid 15px #f3f3f3;
   border-radius: 15px;
+  overflow: hidden;
+  background-color: rgba(0, 0, 0, 0);
+  z-index: 1;
+}
+.second_screen_item>a{
+  width: 100%;
+  height: 100%;
   display: flex;
   align-items: center;
   justify-content: center;
-  overflow: hidden;
-  background-color: rgba(0, 0, 0, 0);
 }
-.second_screen_item>div:hover{
-  transform: scale(1.1);
-}
-.second_screen_item>div{
-  transition: all 0.5s;
-
-}
-.second_screen_item>span{
+.second_screen_item_text{
   text-transform: uppercase;
   font-family: "adineue Black";
   font-size: 30px;
   color: #f3f3f3;
-  z-index: 1;
+  z-index: 2;
 }
-.second_screen_item>div{
+.second_screen_item_BG{
   position: absolute;
+  z-index: -1;
   height: 100%;
   width: 100%;
 }
 #second_screen_first_item_BG{
-  background-image: url("../img/block_img/second_block1.jpg");
+  background-image: url("../../img/block_img/second_block1.jpg");
 }
 #second_screen_second_item_BG{
-  background-image: url("../img/block_img/second_block2.jpg");
+  background-image: url("../../img/block_img/second_block2.jpg");
 }
 #second_screen_third_item_BG{
-  background-image: url("../img/block_img/second_block3.jpg");
+  background-image: url("../../img/block_img/second_block3.jpg");
 }
 
 /*THIRD SCREEN*/
@@ -208,6 +210,7 @@ h1{
 #fourth_screen_first_container{
   justify-content:flex-start;
   text-align: left;
+
 }
 #fourth_screen_second_container{
   justify-content:flex-end;
@@ -251,7 +254,8 @@ h1{
   align-items: center;
 }
 .fifth_screen_item>div>img{
-  height: 60px;
+  max-height: 60px;
+  max-width: 60px;
 }
 
 /*SIXTH SCREEN*/
@@ -270,8 +274,56 @@ h1{
 }
 /*FOOTER*/
 footer{
+  font-family: "adineue Light";
   height: 100px;
+  background-color: #dfdfdf;
+  background-image: url(../../img/bg/firstscreen_bg.jpg);
+  background-position: top;
 }
 #footer_container{
   display: flex;
+  margin: 0 auto;
+  width: 1100px;
+  height: 100%;
+}
+#footer_container>img{
+  margin-left: 20px;
+}
+#footer_container>ul{
+  list-style: none;
+  font-family: "adineue Light";
+  text-transform: uppercase;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  justify-content: center;
+  font-size: 15px;
+}
+#footer_container>ul>li{
+  margin: 5px 20px;
+}
+#footer_container>ul>li>a{
+  color: white;
+}
+#footer_contact{
+  margin-left: 300px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  color: white;
+}
+#footer_contact>span:first-child{
+  margin: 10px 0;
+}
+#social_media_container{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0 50px;
+  width: 120px;
+}
+#social_media_container>a>img{
+  min-width: 30px;
+  max-width: 30px;
+  max-height: 30px;
 }
