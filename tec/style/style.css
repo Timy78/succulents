@@ -9,21 +9,6 @@ p{
   font-size: 18px;
   line-height: 1.3;
 }
-*{
-  margin: 0;
-  outline: none;
-}
-.middle{
-  width: 1100px;
-  margin: 0 auto;
-}
-a, button{
-  text-decoration: none;
-  cursor: pointer;
-}
-body{
-  min-width: 1100px;
-}
 h3{
   font-family: "adineue Black";
   font-size: 30px;
@@ -47,54 +32,6 @@ h3::before{
 h3::after{
   bottom:20px;
   left: 400px;
-}
-
-
-
-/*HEADER*/
-
-header{
-  min-width: 1100px;
-  height: 65px;
-  width: 100%;
-  background-color: rgba(0, 0, 0, 0.5);
-  position: absolute;
-  font-size: 15px;
-}
-header>.middle>ul{
-  list-style: none;
-  font-family: "adineue Light";
-  text-transform: uppercase;
-  height: 65px;
-  margin: 0;
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
-}
-header>.middle>ul>li>a{
-  color: white;
-}
-.logo{
-  width: 200px;
-}
-
-/*scroll to top button*/
-
-#scroll_top{
-  color: white;
-  font-family: "adineue Light";
-  font-size: 40px;
-  position: fixed;
-  bottom: 20px;
-  right: 20px;
-  display: none;
-  width: 60px;
-  height: 60px;
-  border: none;
-  border-radius: 30px;
-  background-color: rgba(0, 0, 0, 0.7);
-  z-index: 100;
-
 }
 
 /*FIRST SCREEN*/
@@ -140,7 +77,6 @@ h1{
 }
 #secont_screen_container{
   margin: 30px auto 0;
-  width: 1100px;
   display: flex;
   justify-content: space-around;
 }
@@ -201,7 +137,6 @@ h1{
 }
 .fourth_screen_container{
   display: flex;
-  width: 1100px;
   margin: 60px auto;
 }
 .fourth_screen_container:last-child{
@@ -233,7 +168,6 @@ h1{
 #fifth_screen_container{
   display: flex;
   margin: 50px auto 0;
-  width: 1100px;
   justify-content: space-around;
 }
 .fifth_screen_item{
@@ -267,63 +201,4 @@ h1{
 }
 #sixth_screen>h3{
   margin-bottom: 50px;
-}
-#ymap{
-  width: 1100px;
-  margin: 0 auto;
-}
-/*FOOTER*/
-footer{
-  font-family: "adineue Light";
-  height: 100px;
-  background-color: #dfdfdf;
-  background-image: url(../../img/bg/firstscreen_bg.jpg);
-  background-position: top;
-}
-#footer_container{
-  display: flex;
-  margin: 0 auto;
-  width: 1100px;
-  height: 100%;
-}
-#footer_container>img{
-  margin-left: 20px;
-}
-#footer_container>ul{
-  list-style: none;
-  font-family: "adineue Light";
-  text-transform: uppercase;
-  display: flex;
-  flex-wrap: wrap;
-  flex-direction: column;
-  justify-content: center;
-  font-size: 15px;
-}
-#footer_container>ul>li{
-  margin: 5px 20px;
-}
-#footer_container>ul>li>a{
-  color: white;
-}
-#footer_contact{
-  margin-left: 300px;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  color: white;
-}
-#footer_contact>span:first-child{
-  margin: 10px 0;
-}
-#social_media_container{
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  margin: 0 50px;
-  width: 120px;
-}
-#social_media_container>a>img{
-  min-width: 30px;
-  max-width: 30px;
-  max-height: 30px;
 }
