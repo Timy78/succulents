@@ -232,3 +232,7 @@ h1{
 #sixth_screen>h3{
   margin-bottom: 50px;
 }
+#sixth_screen>p{
+  margin-top: 20px;
+  text-align: center;
+}
